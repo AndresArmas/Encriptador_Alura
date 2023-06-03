@@ -6,7 +6,6 @@
 	
 	<link rel ="stylesheet" href= "resert.css">
 	<link rel ="stylesheet" href= "style.css">
-	
 </head>
 
 
@@ -29,21 +28,21 @@
   <main>	
 	
 		<section>
-				<textarea class="caja-texto" placeholder = "Ingrese el texto aqui"></textarea>
+				<textarea class="caja-texto" id = "textoEncriptado" placeholder = "Ingrese el texto aqui"></textarea>
 		</section>
 
 		<section>
 			<div class="caja-encriptacion">	
 		    <img src="imagenes/mografic-search.gif" alt="imagen encriptar">
-  			<h2>Ningún mensaje fue encontrado</h2>
-				<p>Ingresa el texto que deses encriptar o desencriptar</p>
+  			<h2 id = "enunciadoEncriptacion">Ningún mensaje fue encontrado</h2>
+				<p id= "parrafo">Ingresa el texto que deses encriptar o desencriptar</p>
 			</div>
 		</section>
 
 		<section>
 			<div class="caja-botones">	
 				<p class= "alerta-minusculas"><img src ="imagenes/Group.png" > Solo letras minusculas y sin acentos</p>
-				<button class="boton-encriptar"> Encriptar </button>
+				<button class="boton-encriptar" id = "boton-encriptar" > Encriptar </button>
 				<button class = "boton-desencriptar"> Descriptar </button>
 			</div>
 		</section>
@@ -51,8 +50,8 @@
 	</main>
 
 	<footer>
-
 	</footer>
-
 </body>
+
+<script src="encriptacion.js"></script>
 </html>
