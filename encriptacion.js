@@ -1,31 +1,41 @@
-var texto = document.getElementById("textoEncriptado")
-var enunciadoEncriptacion = document.getElementById("enunciadoEncriptacion");
+
 var imagen = document.getElementById("imagen");
 var parrafo = document.getElementById("parrafo");
 var botonEncriptar = document.getElementById("boton-encriptar");
 
-alert("llego el js");
 
-function Cambio_letras(){
+//FUNCION DE ENCCRIPTACION DE TEXTO
 
+function encriptar(){
 
-  let textoEncriptado = texto
-  .replace(/e/gi, "enter")
-  .replace(/i/gi, "imes")
-  .replace(/a/gi, "ai")
-  .replace(/o/gi, "ober")
-  .replace(/u/gi, "ufat");
+ var texto = document.getElementById("texto").value
+ var enunciadoEncriptacion = document.getElementById("enunciadoEncriptacion");
 
-  alert(texto.value);
- /*
-  if (document.getElementById("texto").value.length !=0){
-     
-     document.getElementById("enunciadoEncriptacion").value = textoEncriptado;
-     document.getElementById("parrafo").textContent = "Texto en criptado con exito";
-     document.getElementById("text-encriptado").textContent ="";
+  let textoEncriptado = texto 
+  .replace(/e/gi,"enter")
+  .replace(/i/gi,"imes")
+  .replace(/a/gi,"ai")
+  .replace(/o/gi,"ober")
+  .replace(/u/gi,"ufat");
+  
+
+  if (document.getElementById("texto").value.length !=0 ){
+  
+   enunciadoEncriptacion.textContent = textoEncriptado;
+   parrafo.textContent = "Texto incriptado correctamente";
+   texto = document.getElementById("texto").value = "";
+
+ 
   }
-    */
+
+  else {
+
+  parrafo.textContent = "Ningun texto encontrado por favor ingresa un texto"; 
+
+  }
+  
 }
 
-botonEncriptar.onclick = Cambio_letras;
+
+botonEncriptar.onclick = encriptar;
 
