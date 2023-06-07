@@ -23,7 +23,7 @@ function encriptar(){
    enunciadoEncriptacion.textContent = textoEncriptado;
    parrafo.textContent = "Texto incriptado correctamente";
    texto = document.getElementById("texto").value = "";
-   imagen.src  = "./imagenes/JNef.gif";
+   imagen.src  = "./imagenes/cohete.gif";
  
   }
 
@@ -52,8 +52,7 @@ function desencriptar(){
    enunciadoEncriptacion.textContent = textoEncriptado;
    parrafo.textContent = "Ingresa el texto que deses encriptar o desencriptar";
    texto = document.getElementById("texto").value = "";
-
- 
+  imagen.src  = "./imagenes/mografic-search.gif";
   }
 
   else {
